@@ -1,0 +1,185 @@
+main {
+    >.top-side {
+        >.row {
+            background: rgba(30, 30, 88, 0.838);
+
+            >* {
+
+                height: 50px;
+                font-size: 14px;
+                color: whitesmoke;
+                padding: 5px;
+            }
+
+            >span {
+
+                &:first-of-type {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+
+    /* end top-side///// */
+    >.head-top {
+        background-color: rgb(218, 214, 214);
+        width: 100%;
+        height: 190px;
+        justify-content: left;
+
+
+        >.row {
+
+            /* >* {} */
+
+            >header {
+                >.row {
+                    width: 100%;
+
+                    >* {
+                        margin-left: 170px;
+                    }
+
+                    >ul {
+
+                        >li {
+
+                            >a {
+                                color: rgb(30, 30, 88);
+                                font-size: 20px;
+                                padding: 8px;
+                            }
+                        }
+                    }
+
+                    >figure {
+                        margin-top: 25px;
+
+
+                        >img {
+                            width: 70%;
+
+
+                        }
+                    }
+
+                    >.row {
+                        margin-right: 170px;
+
+                        >* {}
+
+                        >a {
+                            color: rgb(30, 30, 88);
+                            font-size: 17px;
+                            padding: 8px;
+                        }
+
+                        >span {
+                            text-transform: uppercase;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+
+        >nav {
+            width: 100%;
+            height: 58px;
+
+            /*means ul */
+            >.row {
+                width: 45%;
+                /* border: 2px solid rgb(200, 255, 0); */
+                margin-top: 5px;
+                margin-left: 150px;
+
+
+                >li {
+                    /* border: 2px solid rgb(56, 57, 55); */
+                    position: relative;
+
+
+                    >a {
+                        /* border: 2px solid red; */
+                        height: 58px;
+                        /* width: 150px;  */
+                        display: flex;
+                        color: rgb(61, 61, 117);
+                        padding: 0 22px;
+                        /* position: relative;  */
+
+                        >span {
+
+                            width: 60px;
+                            height: 20px;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: orange;
+                            text-transform: uppercase;
+                            border-radius: 5px;
+                            margin-left: 5px;
+                        }
+
+                        i {
+                            margin-left: 10px;
+                        }
+
+                    }
+
+                    &:hover>ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+
+                    }
+
+                    >ul {
+                        display: none;
+                        width: 160px;
+                        background-color: rgb(243, 247, 246);
+                        position: absolute;
+                        left: 20px;
+                        top: 50px;
+                        border-radius: 8px;
+                        font-size: 14px;
+
+
+                        >li {
+                            /* border:2px solid rgb(172, 171, 171); */
+                            width: 160px;
+                            height: 34px;
+                            display: flex;
+                            align-items: center;
+
+                            &:hover {
+                                background-color: rgba(225, 225, 229, 0.89);
+                            }
+
+                            i {
+                                margin-right: 15px;
+
+                            }
+
+                            >a {
+
+                                color: rgb(16, 5, 92);
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}
